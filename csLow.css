@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto:wght@700&family=Rubik:wght@300;700&display=swap');
+@media (max-width:1193px) {
+    body{
+        font-family: 'Rubik';
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(77, 77, 77);
+        box-sizing: border-box;
+    }
+    .toDoMain{
+        position: absolute;
+        width: 480px;
+        height: 752px;
+        left: 126px;
+        top: 60px;
+
+        background: #FFFFFF;
+        border-radius: 27px;
+    }
+    .header{
+        position: absolute;
+        width: 510px;
+        height: 85px;
+        left: 53px;
+        top: 70px;
+
+
+    }
+    .firstTextHeader{
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        width: 299px;
+        height: 38px;
+        left: 33px;
+        top: -2px;
+
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+
+        color: #000000;
+    }
+    .secondTextHeader{
+        position: absolute;
+        width: 177px;
+        height: 18px;
+        left: 94px;
+        top: 47px;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #000000;
+
+    }
+    .list{
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 366px;
+        height: 240px;
+        left: 53px;
+        top: 195px;
+        border: 1px solid blue;
+        border-image:linear-gradient(102.11deg, #356EFF, #58DBD3 , #1ECF45);
+        border-image-slice:1;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    /* .listEmpty{
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        width: 364px;
+        height: 189px;
+        left: 0px;
+        top: 1px;
+        border-radius: 14px;
+
+        background: #FFFFFF;
+
+    background: #FFFFFF;
+
+        background: #FFFFFF;
+    }
+    .img{
+        width: 83px;
+        height: 78px;
+        left: 140px;
+        top: 41px;
+
+
+    }
+    .textImg{
+
+    width: 156px;
+    height: 24px;
+    left: 120px;
+    top: 123px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+
+
+    background: linear-gradient(90.77deg, #356EFF -11.89%, #FE87A4 60.08%, #FFAF83 116.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    color: #000000;
+
+    } */
+
+    .el{
+        border: 1px solid #000000;
+        position: absolute;
+        width: 366px;
+        height: 50px;
+        left: -1px;
+        top: -1px;
+        border: 1px solid blue;
+        border-image:linear-gradient(102.11deg, #356EFF, #58DBD3 , #1ECF45);
+        border-image-slice:1;
+    /* пока что список пуст и онорвемнго это без списка будет 0 */
+
+        border-radius: 15px;
+    }
+    .textInfo{
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        width: 98px;
+        height: 17px;
+        left: 27px;
+        top: 17px;
+
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+    /* identical to box height */
+
+
+    color: #000000;
+    }
+    .checkMark{
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        left: 288px;
+        top: 14px;
+        border: none;
+    }
+    .checkMarkImg{
+        position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 0px;
+    top: 0px;
+    transition: 0.2s;
+    }
+    .checkMarkImg:hover{
+        transform: scale(1.2);
+    }
+    .cross{
+        position: absolute;
+        width: 36px;
+        height: 34px;
+        left: 310px;
+        top: 9px;
+    border: none;
+    }
+    .crossImg{
+        position: absolute;
+    width: 36px;
+    height: 34px;
+    left: 0px;
+    top: 0px;
+    transition: 0.2s;
+    }
+    .crossImg:hover{
+        transform: scale(1.2);
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    .add{
+        position: absolute;
+        width: 365px;
+    height: 160px;
+    left: 55px;
+    top: 493px;
+
+        box-sizing: border-box;
+        border: 1px solid blue;
+        border-image:linear-gradient(102.11deg, #356EFF, #58DBD3 , #1ECF45);
+        border-image-slice:1;
+        border-radius: 15px;
+    }
+    .firstTextAdds{
+        position: absolute;
+        width: 246px;
+        height: 24px;
+        left: 26px;
+        top: 28px;
+
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+
+
+        color: #000000;
+    }
+    .inputText{
+        box-sizing: border-box;
+
+    position: absolute;
+    width: 303px;
+height: 23px;
+left: 26px;
+top: 67px;
+
+    background: #FFFFFF;
+    border: 1px solid blue;
+        border-image:linear-gradient(102.11deg, #356EFF, #58DBD3 , #1ECF45);
+        border-image-slice:1;
+    border-radius: 5px;
+    }
+    .inputText:focus{
+        border:2px solid white;
+    }
+    .buttonAdds{
+        position: absolute;
+        width: 104px;
+        height: 26px;
+        left: 26px;
+        top: 109px;
+        border: none;
+    background: #356EFF;
+    border-radius: 7px;
+    color: #FFFFFF;
+    transition: 0.2s;
+
+    }
+
+    .buttonAdds:hover{
+        background-color: #FFFFFF;
+        border: 2.5px solid #356EFF;
+        color:#356EFF;
+    }
+    .q:hover{
+        color: #356EFF;
+    }
+}
+
+
+
