@@ -181,7 +181,7 @@
     .checkMarkImg:hover{
         transform: scale(1.2);
     }
-    .cross{
+    .crossMark{
         margin-left: 5px;
         margin-top: 8px;
     width: 36px;
@@ -269,6 +269,9 @@
     }
     .q:hover{
         color: #356EFF;
+    }
+    .none{
+        display: none !important;
     }
 }
 

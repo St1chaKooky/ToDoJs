@@ -168,7 +168,7 @@
     .checkMarkImg:hover{
         transform: scale(1.2);
     }
-    .cross{
+    .crossMark{
 
         width: 36px;
         height: 34px;
@@ -248,6 +248,9 @@ top: 67px;
     color: #FFFFFF;
     transition: 0.2s;
 
+    }
+    .none{
+        display: none !important;
     }
 
     .buttonAdds:hover{
