@@ -11,20 +11,18 @@
     //отмечаем выполненые задачи
     taskList.addEventListener('click',checkTask)
 
-    if (localStorage.getItem('tasksHTML')){
-        taskList.innerHTML = localStorage.getItem('tasksHTML')
-    }
 
     //функции
     function buttonClick(){
+
         const taskText = input.value;
+
         const taskHtml = `
             <div class="el">
                 <p class="textInfo">${taskText}</p>
                 <button data-action="check" class="checkMark btn-action"><img class="checkMarkImg" src="./imgs/mark.png"></button>
                 <button data-action="cross" class="crossMark btn-action"><img class="crossImg" src="./imgs/cross.png"></button>
             </div>`
-
         //Добавляем задачу на страницу
         taskList.insertAdjacentHTML('beforeend',taskHtml)
         //как и innerHTML добовляет хтмл код на страницу но в заданом taskList месте
@@ -39,7 +37,7 @@
             taskEmpty.classList.add('none')
         }
 
-        saveLocalStoreg()
+
     }
 
     function crossTask(event){
@@ -47,7 +45,7 @@
         if (event.target.dataset.action !== 'cross'){
             return
         }
-
+        //находим и удаляем данный элемент
         if (event.target.dataset.action === 'cross'){
             const parent = event.target.closest('div')
             parent.remove()
@@ -57,7 +55,6 @@
             taskEmpty.classList.remove('none')
         }
 
-        saveLocalStoreg()
     }
 
     function checkTask(event){
@@ -67,8 +64,5 @@
             parentNode.classList.toggle('taskCheck') //toggle добовляет класс как add, но если нажать езе раз тогда вызхванный класс уберется
         }
 
-        saveLocalStoreg()
     }
-    function saveLocalStoreg(){
-        localStorage.setItem('tasksHTML',taskList.innerHTML)
-    }
+
